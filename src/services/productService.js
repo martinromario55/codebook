@@ -42,7 +42,7 @@ export async function getFeaturedList() {
     throw {
       message: response.statusText,
       status: response.status,
-    } //eslint-disable-line
+    }
   }
   const data = await response.json()
 
