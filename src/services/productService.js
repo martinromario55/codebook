@@ -1,6 +1,6 @@
 export async function getProductList(searchTerm) {
   const response = await fetch(
-    `http://localhost:8000/444/products?name_like=${
+    `${process.env.REACT_APP_HOST}/products?name_like=${
       searchTerm ? searchTerm : ''
     }`
   )
